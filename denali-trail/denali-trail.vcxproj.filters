@@ -26,5 +26,8 @@
     <ClInclude Include="page_design.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
