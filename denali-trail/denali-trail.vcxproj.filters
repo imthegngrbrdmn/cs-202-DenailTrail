@@ -26,7 +26,7 @@
     <ClInclude Include="page_design.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sl.h">
+    <ClInclude Include="random.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
