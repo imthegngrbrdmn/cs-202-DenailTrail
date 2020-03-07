@@ -1,9 +1,9 @@
 #include "page_design.h"
 #include <iostream>
 #include <string>
-#include "..//SIGIL/sigil-vc2015-win64/include/sl.h"
+#include "sl.h"
 
-#pragma comment(lib, "sigil.lib")
+
 
 int startGame();
 Character createChar();
