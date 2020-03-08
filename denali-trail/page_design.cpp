@@ -36,7 +36,15 @@ void illness(Character& protag, int& distance)
 	distance += 1;
 }
 
-
+void wolf(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "A wolf appears, you run as fast as you can to escape!";
+	protag.health -= 10;
+	protag.hunger += 5;
+	protag.thirst += 10;
+	distance += 5;
+}
 
 void randomEvent(Character& protag, int& distance)
 {
