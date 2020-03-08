@@ -19,6 +19,16 @@ void lost(Character& protag, int& distance)
 	protag.thirst += 10;
 	distance += 1;
 }
+
+void foundKnife(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "You found a Knife.";
+	protag.health += 5;
+	distance += 1
+}
+
+
 void randomEvent(Character& protag, int& distance)
 {
 	std::vector<std::string> events;
