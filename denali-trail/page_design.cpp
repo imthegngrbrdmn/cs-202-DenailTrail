@@ -67,7 +67,16 @@ void foundFood(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You found a cache of food.";
-	protag.hunger += 10;
+	protag.hunger -= 10;
+	protag.health += 5;
+	distance += 1
+}
+
+void foundWater(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "You found a source of water.";
+	protag.thirst -= 10;
 	protag.health += 5;
 	distance += 1
 }
