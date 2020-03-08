@@ -4,6 +4,7 @@
 #include "random.hpp"
 #include <string>
 
+//Struct to hold player variables.
 struct Character
 {
 	std::string name;
@@ -13,8 +14,6 @@ struct Character
 	int health;
 	long long inventory;
 };
-
-
 
 void randomEvent(Character& protag, int&distance);
 #endif

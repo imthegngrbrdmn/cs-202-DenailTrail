@@ -31,6 +31,7 @@ void foundKnife(Character& protag, int& distance)
 	system("CLS");
 	std::cout << "You found a Knife.";
 	protag.health += 5;
+	protag.inventory += 1;
 	distance += 1
 }
 
@@ -84,6 +85,7 @@ void foundFood(Character& protag, int& distance)
 	protag.hunger -= 10;
 	protag.health += 5;
 	protag.strength += 10;
+	protag.inventory += 3;
 	distance += 1
 }
 
@@ -95,6 +97,7 @@ void foundWater(Character& protag, int& distance)
 	protag.thirst -= 10;
 	protag.health += 5;
 	protag.strength += 10;
+	protag.inventory += 2;
 	distance += 1
 }
 

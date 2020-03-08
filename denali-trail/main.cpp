@@ -2,13 +2,12 @@
 #include <iostream>
 #include <string>
 
-
-
 int startGame();
 Character createChar();
 
 int main(int argc, char** argv)
 {
+	//Player input taken.
 	std::string input;
 	std::cout << "Welcome to the Denali Trail!\nAre you ready for an adventure?\n(Y/n)";
 	std::cin >> input;
@@ -19,6 +18,8 @@ int main(int argc, char** argv)
 	}
 	else return 0;
 }
+
+//Begins game.
 int startGame()
 {
 	std::string input;
@@ -33,6 +34,8 @@ int startGame()
 	}
 	return distance;
 }
+
+//Creates character.
 Character createChar()
 {
 	Character protag;
