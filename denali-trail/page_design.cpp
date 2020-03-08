@@ -98,13 +98,14 @@ void foundWater(Character& protag, int& distance)
 	distance += 1
 }
 
-//
-void (Character& protag, int& distance)
+//Player eats a poison berry.
+void poison(Character& protag, int& distance)
 {
 	system("CLS");
-	std::cout << "";
-	protag.hunger += 10;
-	protag.health += 5;
+	std::cout << "You found a berry and ate it. It was poisonous.";
+	protag.hunger += 5;
+	protag.health -= 5;
+	protag.strength -= 5;
 	distance += 1
 }
 
@@ -121,7 +122,7 @@ void randomEvent(Character& protag, int& distance)
 	events.push_back("shelter");
 	events.push_back("foundFood");
 	events.push_back("foundwater");
-	//events.push_back("");
+	events.push_back("poison");
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -161,8 +162,8 @@ void randomEvent(Character& protag, int& distance)
 	{
 		foundWater(protag, distance);
 	}
-	else if (events[9] == "")
+	else if (events[9] == "poison")
 	{
-		(protag, distance);
+		poison(protag, distance);
 	}
 }
