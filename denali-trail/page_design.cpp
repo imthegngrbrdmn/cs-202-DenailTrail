@@ -28,6 +28,15 @@ void foundKnife(Character& protag, int& distance)
 	distance += 1
 }
 
+void illness(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "Developing symptoms of illness, maybe an infection.";
+	protag.health -= 5;
+	distance += 1;
+}
+
+
 
 void randomEvent(Character& protag, int& distance)
 {
