@@ -58,6 +58,7 @@ void shelter(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You come across a shelter. Let's rest.";
+	sleep(2);
 	protag.health += 20;
 	distance += 0;
 }
