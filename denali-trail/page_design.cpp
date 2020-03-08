@@ -63,6 +63,15 @@ void shelter(Character& protag, int& distance)
 	distance += 0;
 }
 
+void foundFood(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "You found a cache of food.";
+	protag.hunger += 10;
+	protag.health += 5;
+	distance += 1
+}
+
 void randomEvent(Character& protag, int& distance)
 {
 	std::vector<std::string> events;
