@@ -1,6 +1,7 @@
 #include "page_design.h"
 #include <vector>
 #include <iostream>
+#include <ctime>
 
 using Random=effolkronium::random_static;
 
@@ -32,7 +33,7 @@ void foundKnife(Character& protag, int& distance)
 	std::cout << "You found a Knife.";
 	protag.health += 5;
 	protag.inventory += 1;
-	distance += 1
+	distance += 1;
 }
 
 //Player falls ill. 
@@ -86,7 +87,7 @@ void foundFood(Character& protag, int& distance)
 	protag.health += 5;
 	protag.strength += 10;
 	protag.inventory += 3;
-	distance += 1
+	distance += 1;
 }
 
 //Player finds some water.
@@ -98,7 +99,7 @@ void foundWater(Character& protag, int& distance)
 	protag.health += 5;
 	protag.strength += 10;
 	protag.inventory += 2;
-	distance += 1
+	distance += 1;
 }
 
 //Player eats a poison berry.
@@ -109,7 +110,7 @@ void poison(Character& protag, int& distance)
 	protag.hunger += 5;
 	protag.health -= 5;
 	protag.strength -= 5;
-	distance += 1
+	distance += 1;
 }
 
 //Places all events into a vector and generates one randomly. 
