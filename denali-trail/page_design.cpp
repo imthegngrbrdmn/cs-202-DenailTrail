@@ -54,6 +54,14 @@ void person(Character& protag, int& distance)
 	distance += 5;
 }
 
+void shelter(Character& protag, int& distance)
+{
+	system("CLS");
+	std::cout << "You come across a shelter. Let's rest.";
+	protag.health += 20;
+	distance += 0;
+}
+
 void randomEvent(Character& protag, int& distance)
 {
 	std::vector<std::string> events;
