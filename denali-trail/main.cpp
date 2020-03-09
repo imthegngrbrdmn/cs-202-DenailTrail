@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 	if (input == "y" || input == "Y")
 	{
 		int distance = startGame();
-		std::cout << "\nYou made it: " << distance << " feet down the trail";
+		std::cout << "\nYou made it: " << distance << " feet down the trail\n";
 	}
 	else return 0;
 }
@@ -28,7 +28,7 @@ int startGame()
 	while (distance < 100)
 	{
 		randomEvent(protag, distance);
-		std::cout << "You are " << distance << " feet down the trail\nContinue?\n(Y/n)";
+		std::cout << "\nYou are " << distance << " feet down the trail\nContinue?\n(Y/n)";
 		std::cin >> input;
 		if (input == "n" || input == "N") break;
 	}

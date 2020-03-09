@@ -72,7 +72,6 @@ void shelter(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You come across a shelter. Let's rest.";
-	sleep(2);
 	protag.health += 20;
 	protag.strength += 20;
 	distance += 0;
@@ -134,39 +133,39 @@ void randomEvent(Character& protag, int& distance)
 	{
 		bear(protag, distance);
 	}
-	else if (events[1] == "lost")
+	else if (events[0] == "lost")
 	{
 		lost(protag, distance);
 	}
-	else if (events[2] == "foundKnife")
+	else if (events[0] == "foundKnife")
 	{
 		foundKnife(protag, distance);
 	}
-	else if (events[3] == "illness")
+	else if (events[0] == "illness")
 	{
 		illness(protag, distance);
 	}
-	else if (events[4] == "wolf")
+	else if (events[0] == "wolf")
 	{
 		wolf(protag, distance);
 	}
-	else if (events[5] == "person")
+	else if (events[0] == "person")
 	{
 		person(protag, distance);
 	}
-	else if (events[6] == "shelter")
+	else if (events[0] == "shelter")
 	{
 		shelter(protag, distance);
 	}
-	else if (events[7] == "foundFood")
+	else if (events[0] == "foundFood")
 	{
 		foundFood(protag, distance);
 	}
-	else if (events[8] == "foundWater")
+	else if (events[0] == "foundWater")
 	{
 		foundWater(protag, distance);
 	}
-	else if (events[9] == "poison")
+	else if (events[0] == "poison")
 	{
 		poison(protag, distance);
 	}
