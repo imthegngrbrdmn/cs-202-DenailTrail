@@ -2,6 +2,7 @@
 #define PAGE_DESIGN_H
 
 #include "random.hpp"
+#include "character.h"
 #include <string>
 
 //Struct to hold player variables.
