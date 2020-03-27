@@ -8,7 +8,17 @@ class Character
 public:
 	Character(std::string="The Shadow");
 	~Character();
-
+	std::string name();
+	std::string setName();
+	int thirst();
+	void setThirst();
+	int hunger();
+	void setHunger();
+	int strength();
+	void setStrength();
+	int health();
+	void setHealth();
+	// a lot more has to be incorporated before inventory, so just don't use it for now.
 private:
 	std::string name_{ "The Shadow" };
 	int thirst_{ 0 };
