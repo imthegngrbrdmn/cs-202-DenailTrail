@@ -10,8 +10,8 @@ void bear(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You have been attacked by a bear.\t";
-	protag.health -= 10;
-	protag.strength -= 10;
+	protag.setHealth(protag.health() - 10);
+	protag.setStrength(protag.strength() - 10);
 	distance += 5;
 }
 
@@ -22,7 +22,7 @@ void lost(Character& protag, int& distance)
 	std::cout << "You get lost for a while and then eventually find your way.";
 	protag.hunger += 10;
 	protag.thirst += 10;
-	protag.strength -= 5;
+	protag.setStrength(protag.strength() - 10);
 	distance += 1;
 }
 
@@ -31,7 +31,7 @@ void foundKnife(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You found a Knife.";
-	protag.health += 5;
+	protag.setHealth(protag.health() + 5);
 	protag.inventory += 1;
 	distance += 1;
 }
@@ -41,7 +41,7 @@ void illness(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "Developing symptoms of illness, maybe an infection.";
-	protag.health -= 5;
+	protag.setHealth(protag.health() + 5);
 	protag.strength -= 10;
 	distance += 1;
 }
@@ -51,7 +51,7 @@ void wolf(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "A wolf appears, you run as fast as you can to escape!";
-	protag.health -= 10;
+	protag.setHealth(protag.health() - 10);
 	protag.hunger += 5;
 	protag.thirst += 10;
 	protag.strength -= 10;
@@ -72,7 +72,7 @@ void shelter(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You come across a shelter. Let's rest.";
-	protag.health += 20;
+	protag.setHealth(protag.health() + 20);
 	protag.strength += 20;
 	distance += 0;
 }
@@ -83,7 +83,7 @@ void foundFood(Character& protag, int& distance)
 	system("CLS");
 	std::cout << "You found a cache of food.";
 	protag.hunger -= 10;
-	protag.health += 5;
+	protag.setHealth(protag.health() + 5);
 	protag.strength += 10;
 	protag.inventory += 3;
 	distance += 1;
@@ -95,7 +95,7 @@ void foundWater(Character& protag, int& distance)
 	system("CLS");
 	std::cout << "You found a source of water.";
 	protag.thirst -= 10;
-	protag.health += 5;
+	protag.setHealth(protag.health() + 5);
 	protag.strength += 10;
 	protag.inventory += 2;
 	distance += 1;
@@ -107,7 +107,7 @@ void poison(Character& protag, int& distance)
 	system("CLS");
 	std::cout << "You found a berry and ate it. It was poisonous.";
 	protag.hunger += 5;
-	protag.health -= 5;
+	protag.setHealth(protag.health() - 5);
 	protag.strength -= 5;
 	distance += 1;
 }
