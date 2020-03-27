@@ -5,16 +5,5 @@
 #include "character.h"
 #include <string>
 
-//Struct to hold player variables.
-struct Character
-{
-	std::string name;
-	int thirst;
-	int hunger;
-	int strength;
-	int health;
-	long long inventory;
-};
-
 void randomEvent(Character& protag, int&distance);
 #endif
