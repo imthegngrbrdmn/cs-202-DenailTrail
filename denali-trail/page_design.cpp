@@ -20,7 +20,7 @@ void lost(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You get lost for a while and then eventually find your way.";
-	protag.hunger += 10;
+	protag.setHunger(protag.hunger() + 10);
 	protag.setThirst(protag.thirst() + 10);
 	protag.setStrength(protag.strength() - 5);
 	distance += 1;
@@ -53,7 +53,7 @@ void wolf(Character& protag, int& distance)
 	std::cout << "A wolf appears, you run as fast as you can to escape!";
 	protag.setHealth(protag.health() - 10);
 	protag.hunger += 5;
-	protag.thirst += 10;
+	protag.setThirst(protag.thirst() + 10);
 	protag.setStrength(protag.strength() - 10);
 	distance += 5;
 }
@@ -63,7 +63,7 @@ void person(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "A person appears. May or may not be a friendly. You run just incase.";
-	protag.thirst += 5;
+	protag.setThirst(protag.thirst() + 5);
 	distance += 5;
 }
 
@@ -94,7 +94,7 @@ void foundWater(Character& protag, int& distance)
 {
 	system("CLS");
 	std::cout << "You found a source of water.";
-	protag.thirst -= 10;
+	protag.setThirst(protag.thirst() - 10);
 	protag.setHealth(protag.health() + 5);
 	protag.setStrength(protag.strength() + 10);
 	protag.inventory += 2;
