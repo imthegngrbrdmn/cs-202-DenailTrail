@@ -9,15 +9,15 @@ public:
 	Character(std::string="The Shadow");
 	~Character();
 	std::string name();
-	std::string setName();
+	void setName(std::string name);
 	int thirst();
-	void setThirst();
+	void setThirst(int thirst);
 	int hunger();
-	void setHunger();
+	void setHunger(int hunger);
 	int strength();
-	void setStrength();
+	void setStrength(int strength);
 	int health();
-	void setHealth();
+	void setHealth(int hp);
 	// a lot more has to be incorporated before inventory, so just don't use it for now.
 private:
 	std::string name_{ "The Shadow" };
