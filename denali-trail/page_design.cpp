@@ -32,7 +32,7 @@ void foundKnife(Character& protag, int& distance)
 	system("CLS");
 	std::cout << "You found a Knife.";
 	protag.setHealth(protag.health() + 5);
-	protag.inventory += 1;
+	//protag.inventory += 1;
 	distance += 1;
 }
 
@@ -85,7 +85,7 @@ void foundFood(Character& protag, int& distance)
 	protag.setHunger(protag.hunger() - 10);
 	protag.setHealth(protag.health() + 5);
 	protag.setStrength(protag.strength() + 10);
-	protag.inventory += 3;
+	//protag.inventory += 3;
 	distance += 1;
 }
 

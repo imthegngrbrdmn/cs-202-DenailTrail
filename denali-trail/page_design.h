@@ -5,5 +5,5 @@
 #include "character.h"
 #include <string>
 
-void randomEvent(Character& protag, int&distance);
+void randomEvent(Character& protag, int& distance);
 #endif

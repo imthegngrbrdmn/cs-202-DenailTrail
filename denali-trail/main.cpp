@@ -38,13 +38,9 @@ int startGame()
 //Creates character.
 Character createChar()
 {
-	Character protag;
+	std::string name;
 	std::cout << "\nWhat would you like to name your character? ";
-	std::cin >> protag.name;
-	protag.health = 100;
-	protag.hunger = 0;
-	protag.thirst = 0;
-	protag.inventory = 0;
-	protag.strength = 0;
+	std::cin >> name;
+	Character protag(name);
 	return protag;
 }

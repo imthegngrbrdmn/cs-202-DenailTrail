@@ -1,7 +1,8 @@
 #include "character.h"
 
-Character::Character(std::string="The Shadow")
+Character::Character(std::string name)
 {
+	name_=name;
 }
 
 Character::~Character()

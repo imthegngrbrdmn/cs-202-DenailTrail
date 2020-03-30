@@ -6,7 +6,7 @@
 class Character
 {
 public:
-	Character(std::string="The Shadow");
+	Character(std::string name);
 	~Character();
 	std::string name();
 	void setName(std::string name);
