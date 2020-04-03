@@ -97,7 +97,7 @@ void foundWater(Character& protag, int& distance)
 	protag.setThirst(protag.thirst() - 10);
 	protag.setHealth(protag.health() + 5);
 	protag.setStrength(protag.strength() + 10);
-	protag.inventory += 2;
+	//protag.inventory += 2;
 	distance += 1;
 }
 
