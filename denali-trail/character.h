@@ -18,8 +18,10 @@ public:
 	void setStrength(int strength);
 	int health();
 	void setHealth(int hp);
-	// a lot more has to be incorporated before inventory, so just don't use it for now.
-
+	
+	bool addInventory(int item);
+	bool removeInventory(int item);
+	bool checkInventory(int item);
 private:
 	std::string name_{ "The Shadow" };
 	int thirst_{ 0 };
