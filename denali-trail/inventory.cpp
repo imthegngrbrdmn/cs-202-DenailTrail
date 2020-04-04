@@ -11,9 +11,9 @@
 	returns false. 
 
 	Items are as follows:
-	0=
-	1=
-	2=
+	0 = "Knife";
+	1 = "Food";
+	2 = "Water";
 	3=
 	4=
 	5=
@@ -75,7 +75,6 @@
 	61=
 	62=
 	63=
-	...(REBECCA PUT THE ITEMS HERE)
 	*/
 bool Character::addInventory(int item)
 {
