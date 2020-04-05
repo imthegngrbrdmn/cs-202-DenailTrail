@@ -58,3 +58,13 @@ void Character::setHealth(int hp)
 {
 	health_ = hp;
 }
+
+int Character::inventory()
+{
+	return inventory_;
+}
+
+void Character::setInventory(int items)
+{
+	inventory_ = items;
+}

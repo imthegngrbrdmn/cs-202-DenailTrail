@@ -19,6 +19,9 @@ public:
 	int health();
 	void setHealth(int hp);
 	
+	int inventory();
+	void setInventory(int items);
+	
 	bool addInventory(int item);
 	bool removeInventory(int item);
 	bool checkInventory(int item);
