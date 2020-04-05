@@ -127,16 +127,13 @@ void randomEvent(Character& protag, int& distance)
 {
 	std::vector<std::string> events;
 	events.push_back("foundItem");
-	//events.push_back("bear");
-	//events.push_back("lost");
-	////events.push_back("foundKnife");
-	//events.push_back("illness");
-	//events.push_back("wolf");
-	//events.push_back("person");
-	//events.push_back("shelter");
-	////events.push_back("foundFood");
-	////events.push_back("foundwater");
-	//events.push_back("poison");
+	events.push_back("bear");
+	events.push_back("lost");
+	events.push_back("illness");
+	events.push_back("wolf");
+	events.push_back("person");
+	events.push_back("shelter");
+	events.push_back("poison");
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
