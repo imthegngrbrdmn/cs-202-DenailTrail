@@ -5,6 +5,6 @@
 #include "character.h"
 #include <string>
 
-void randomItem(Character& protag, int& distance);
+std::pair<int, std::string> randomItem();
 
 #endif

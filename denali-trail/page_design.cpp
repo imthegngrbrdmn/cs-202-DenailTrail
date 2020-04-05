@@ -116,9 +116,9 @@ void poison(Character& protag, int& distance)
 void foundItem(Character& protag, int& distance)
 {
 	system("CLS");
-	randomItem;
-	std::cout << "You found an item.";
-	protag.addInventory(protag.inventory() + 1);
+	std::pair<int,std::string> item = randomItem();
+	std::cout << "You found an item:\t"<<item.second;
+	if (!protag.addInventory(item.first)) std::cout << "\nYou already have this item";
 	distance += 1;
 }
 
