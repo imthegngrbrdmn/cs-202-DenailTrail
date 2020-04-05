@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="character.h" />
+    <ClInclude Include="Items.h" />
     <ClInclude Include="page_design.h" />
     <ClInclude Include="random.hpp" />
   </ItemGroup>

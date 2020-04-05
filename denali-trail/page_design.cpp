@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <ctime>
+#include "Items.h"
 
 using Random=effolkronium::random_static;
 
@@ -112,20 +113,30 @@ void poison(Character& protag, int& distance)
 	distance += 1;
 }
 
+void foundItem(Character& protag, int& distance)
+{
+	system("CLS");
+	randomItem;
+	std::cout << "You found an item.";
+	protag.addInventory(protag.inventory() + 1);
+	distance += 1;
+}
+
 //Places all events into a vector and generates one randomly. 
 void randomEvent(Character& protag, int& distance)
 {
 	std::vector<std::string> events;
-	events.push_back("bear");
-	events.push_back("lost");
-	events.push_back("foundKnife");
-	events.push_back("illness");
-	events.push_back("wolf");
-	events.push_back("person");
-	events.push_back("shelter");
-	events.push_back("foundFood");
-	events.push_back("foundwater");
-	events.push_back("poison");
+	events.push_back("foundItem");
+	//events.push_back("bear");
+	//events.push_back("lost");
+	////events.push_back("foundKnife");
+	//events.push_back("illness");
+	//events.push_back("wolf");
+	//events.push_back("person");
+	//events.push_back("shelter");
+	////events.push_back("foundFood");
+	////events.push_back("foundwater");
+	//events.push_back("poison");
 
 	//Shuffles events and chooses one at random.
 	Random::shuffle(events);
@@ -136,10 +147,6 @@ void randomEvent(Character& protag, int& distance)
 	else if (events[0] == "lost")
 	{
 		lost(protag, distance);
-	}
-	else if (events[0] == "foundKnife")
-	{
-		foundKnife(protag, distance);
 	}
 	else if (events[0] == "illness")
 	{
@@ -157,16 +164,12 @@ void randomEvent(Character& protag, int& distance)
 	{
 		shelter(protag, distance);
 	}
-	else if (events[0] == "foundFood")
-	{
-		foundFood(protag, distance);
-	}
-	else if (events[0] == "foundWater")
-	{
-		foundWater(protag, distance);
-	}
 	else if (events[0] == "poison")
 	{
 		poison(protag, distance);
+	}
+	else if (events[0] == "foundItem")
+	{
+		foundItem(protag, distance);
 	}
 }

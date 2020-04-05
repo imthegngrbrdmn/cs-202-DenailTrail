@@ -1,4 +1,5 @@
 #include "page_design.h"
+#include "Items.h"
 #include <iostream>
 #include <string>
 
@@ -25,6 +26,7 @@ int startGame()
 	std::string input;
 	int distance = 0;
 	Character protag = createChar();
+
 	while (distance < 100)
 	{
 		randomEvent(protag, distance);

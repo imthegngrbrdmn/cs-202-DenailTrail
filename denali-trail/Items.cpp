@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "page_design.h"
+#include "Items.h"
 
 using Random = effolkronium::random_static;
 
@@ -19,7 +20,7 @@ int pen = 8;
 int empty_bottle = 9;
 
 //Function to randomise the items found. 
-void randomItem(Character& protag)
+void randomItem(Character& protag, int& distance)
 {
 	items.push_back(knife);
 	items.push_back(candy);
@@ -36,10 +37,52 @@ void randomItem(Character& protag)
 
 	if (items[0] == knife)
 	{
-		protag.setInventory(protag.inventory() + 1);
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
 	}
 	else if (items[0] == candy)
 	{
-		protag.setInventory(protag.inventory() + 1);;
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == food)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == water)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == medicine)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == bear_spray)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == rocks)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == notebook)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == pen)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
+	}
+	else if (items[0] == empty_bottle)
+	{
+		protag.addInventory(protag.inventory() + 1);
+		distance + 1;
 	}
 }
