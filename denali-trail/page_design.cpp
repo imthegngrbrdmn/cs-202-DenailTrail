@@ -27,16 +27,6 @@ void lost(Character& protag, int& distance)
 	distance += 1;
 }
 
-//Player finds a knife along the route.
-void foundKnife(Character& protag, int& distance)
-{
-	system("CLS");
-	std::cout << "You found a Knife.";
-	protag.setHealth(protag.health() + 5);
-	//protag.inventory += 1;
-	distance += 1;
-}
-
 //Player falls ill. 
 void illness(Character& protag, int& distance)
 {
@@ -76,30 +66,6 @@ void shelter(Character& protag, int& distance)
 	protag.setHealth(protag.health() + 20);
 	protag.setStrength(protag.strength() + 20);
 	distance += 0;
-}
-
-//Player finds some food.
-void foundFood(Character& protag, int& distance)
-{
-	system("CLS");
-	std::cout << "You found a cache of food.";
-	protag.setHunger(protag.hunger() - 10);
-	protag.setHealth(protag.health() + 5);
-	protag.setStrength(protag.strength() + 10);
-	//protag.inventory += 3;
-	distance += 1;
-}
-
-//Player finds some water.
-void foundWater(Character& protag, int& distance)
-{
-	system("CLS");
-	std::cout << "You found a source of water.";
-	protag.setThirst(protag.thirst() - 10);
-	protag.setHealth(protag.health() + 5);
-	protag.setStrength(protag.strength() + 10);
-	//protag.inventory += 2;
-	distance += 1;
 }
 
 //Player eats a poison berry.
