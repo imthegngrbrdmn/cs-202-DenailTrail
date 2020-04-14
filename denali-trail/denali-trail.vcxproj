@@ -126,6 +126,8 @@
     <ClCompile Include="character.cpp" />
     <ClCompile Include="inventory.cpp" />
     <ClCompile Include="Items.cpp" />
+    <ClCompile Include="landmarks.cpp" />
+    <ClCompile Include="life.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="page_design.cpp" />
   </ItemGroup>
