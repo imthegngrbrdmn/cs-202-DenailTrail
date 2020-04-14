@@ -1,4 +1,4 @@
-#include "character.h"
+#include "page_design.h"
 #include <cmath>
 /*
 	Inventory items should all be integers from 0-63 
