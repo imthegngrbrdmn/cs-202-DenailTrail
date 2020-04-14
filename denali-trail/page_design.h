@@ -6,4 +6,7 @@
 #include <string>
 
 void randomEvent(Character& protag, int& distance);
+
+void landmark(Character& protag);
+
 #endif
