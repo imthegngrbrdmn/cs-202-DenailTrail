@@ -25,6 +25,8 @@ public:
 	bool addInventory(int item);
 	bool removeInventory(int item);
 	bool checkInventory(int item);
+	
+	bool alive();
 private:
 	std::string name_{ "The Shadow" };
 	int thirst_{ 0 };
