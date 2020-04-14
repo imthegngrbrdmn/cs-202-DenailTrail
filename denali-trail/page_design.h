@@ -3,6 +3,8 @@
 
 #include "random.hpp"
 #include "character.h"
+#include "Items.h"
+
 #include <string>
 
 void randomEvent(Character& protag, int& distance);
