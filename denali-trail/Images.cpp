@@ -49,3 +49,19 @@ void PoisonImg()
     int k = waitKey(5000);
     destroyWindow("Poison!");
 }
+
+//Loads image of shelter event.
+void ShelterImg()
+{
+    std::string image_path = samples::findFile("shelter.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Shelter!", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(5000);
+    destroyWindow("Shelter!");
+}
