@@ -30,7 +30,10 @@
     <ClCompile Include="Items.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Images.cpp">
+    <ClCompile Include="life.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="landmarks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,13 +44,7 @@
     <ClInclude Include="random.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="character.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Items.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Images.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

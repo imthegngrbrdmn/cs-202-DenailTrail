@@ -2,5 +2,5 @@
 
 bool Character::alive()
 {
-	return health>0;
+	return health_>0;
 }
