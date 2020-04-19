@@ -127,10 +127,12 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "shelter")
 	{
+		ShelterImg();
 		shelter(protag, distance);
 	}
 	else if (events[0] == "poison")
 	{
+		PoisonImg();
 		poison(protag, distance);
 	}
 	else if (events[0] == "foundItem")

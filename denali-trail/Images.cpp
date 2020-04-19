@@ -34,18 +34,18 @@ void WolfImg()
     destroyWindow("Wolf attack!");
 }
 
-////Loads image of poison event.
-//void PoisonImg()
-//{
-//    std::string image_path = samples::findFile(".jpg");
-//    Mat img = imread(image_path, IMREAD_COLOR);
-//    if (img.empty())
-//    {
-//        std::cout << "Could not read the image: " << image_path << std::endl;
-//    }
-//    imshow("Poison!", img);
-//
-//    //Wait for a keystroke in the window then closes the window.
-//    int k = waitKey(5000);
-//    destroyWindow("Poison!");
-//}
+//Loads image of poison event.
+void PoisonImg()
+{
+    std::string image_path = samples::findFile("poison.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Poison!", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(5000);
+    destroyWindow("Poison!");
+}
