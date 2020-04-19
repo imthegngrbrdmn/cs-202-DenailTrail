@@ -1,4 +1,5 @@
 #include "page_design.h"
+#include "Images.h"
 #include <vector>
 #include <iostream>
 #include <ctime>
@@ -104,6 +105,7 @@ void randomEvent(Character& protag, int& distance)
 	Random::shuffle(events);
 	if (events[0] == "bear")
 	{
+		BearImg();
 		bear(protag, distance);
 	}
 	else if (events[0] == "lost")
