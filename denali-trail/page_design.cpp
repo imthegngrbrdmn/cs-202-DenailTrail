@@ -118,6 +118,7 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "wolf")
 	{
+		WolfImg();
 		wolf(protag, distance);
 	}
 	else if (events[0] == "person")
