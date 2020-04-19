@@ -36,6 +36,9 @@
     <ClCompile Include="landmarks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Images.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="page_design.h">
@@ -45,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Images.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
