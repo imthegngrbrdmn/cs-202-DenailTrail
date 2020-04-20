@@ -110,6 +110,7 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "lost")
 	{
+		LostImg();
 		lost(protag, distance);
 	}
 	else if (events[0] == "illness")
@@ -124,7 +125,7 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "person")
 	{
-		personImg();
+		PersonImg();
 		person(protag, distance);
 	}
 	else if (events[0] == "shelter")
