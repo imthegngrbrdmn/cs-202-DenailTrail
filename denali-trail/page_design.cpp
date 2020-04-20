@@ -123,6 +123,7 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "person")
 	{
+		personImg();
 		person(protag, distance);
 	}
 	else if (events[0] == "shelter")
