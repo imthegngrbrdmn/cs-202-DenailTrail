@@ -114,6 +114,7 @@ void randomEvent(Character& protag, int& distance)
 	}
 	else if (events[0] == "illness")
 	{
+		IllnessImg();
 		illness(protag, distance);
 	}
 	else if (events[0] == "wolf")
