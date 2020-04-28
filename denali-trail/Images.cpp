@@ -116,3 +116,18 @@ void LostImg()
     destroyWindow("Lost!");
 }
 
+//Loads image of shelter event.
+void FoundItemImg()
+{
+    std::string image_path = samples::findFile("found.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    if (img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+    }
+    imshow("Found An Item!", img);
+
+    //Wait for a keystroke in the window then closes the window.
+    int k = waitKey(5000);
+    destroyWindow("Found an Item!");
+}
