@@ -19,7 +19,9 @@ version of the code.
 We will recommend using Visual Studio to compile the code, but right now that isn't very  
 important because we only have header-only libraries, but when we actually include a GUI,
 it may be easier for you to use Visual Studio 2019.  
-***There will be a manual here for including libraries***.  
+
+The Code Requires the OpenCV Library so that it can pop up images for random vents that
+happen within the game.  
 
 ## Behind The Scenes  
 
