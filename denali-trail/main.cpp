@@ -16,6 +16,10 @@ int main(int argc, char** argv)
 	{
 		int distance = startGame();
 		std::cout << "\nYou made it: " << distance << " feet down the trail\n";
+		if (distance >= 154176)
+		{
+			std::cout<<"You have completed the Denali Trail!\n";
+		}
 	}
 	else return 0;
 }
@@ -27,7 +31,7 @@ int startGame()
 	int distance = 0;
 	Character protag = createChar();
 
-	while (distance < 100)
+	while (distance < 154176)	//actual length of Kesugi Ridge
 	{
 		randomEvent(protag, distance);
 		std::cout << "\nYou are " << distance << " feet down the trail\nContinue?\n(Y/n)";
